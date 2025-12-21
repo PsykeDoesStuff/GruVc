@@ -51,7 +51,7 @@ void exampleInheritor_method_one(void *self) {
 // define derrived vtable
 exampleClassVTable inheritorVTable = {.method_one =
                                           exampleInheritor_method_one};
-void exampleInheritor_init(exampleInheritor *ei, int x) {
+void exampleInheritor_init(exampleInheritor *ei, int x) 
   ei->super.vptr = &inheritorVTable;
 }
 

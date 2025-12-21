@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/GruVeTest.dir/link.d CMakeFiles/GruVeTest.dir/Debug/main.c.o -o GruVeTest  libGruVe.a libglad.a -lglfw /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so -ldl -lm

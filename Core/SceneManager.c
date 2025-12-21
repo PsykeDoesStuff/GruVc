@@ -9,8 +9,8 @@ UUid CreateScene(SceneManager *root, const char *name) {
   HashTableInit(&scene.components);
   scene.name = name;
   scene.componentCount = 0;
-
   scene.entityCount = 0;
+  
 
   char *uuid = UUidToString(32, scene.id);
 
