@@ -1,14 +1,16 @@
 #pragma once
 
+#include "../Helpers/OOP.h"
+#include "Entities/UUID.h"
 #include <stddef.h>
 #include <stdint.h>
 
-typedef uint64_t ComponentId;
+#define COMPONENT_METHODS                                                      \
+  void (*ComponentStart)(void *self);                                          \
+  void (*ComponentUpdate)(void *self);                                         \
+  void (*ComponentExit)(void *self);
 
-typedef struct {
-  char Name[32];
-  size_t size;
-  ComponentId id;
-} ComponentTypeInfo;
-
-ComponentId RegisterComponent(const char *name, size_t size);
+UUID_CLASS(Component)
+struct ComponentVTable {
+  COMPONENT_METHODS
+};
