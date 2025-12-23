@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/lyndon/GruVc/Build",
+  "command": "/usr/bin/cc  -I/home/lyndon/GruVc/Extern/Include  -o CMakeFiles/glad.dir/Extern/Include/glad.c.o -c /home/lyndon/GruVc/Extern/Include/glad.c",
+  "file": "/home/lyndon/GruVc/Extern/Include/glad.c",
+  "output": "CMakeFiles/glad.dir/Extern/Include/glad.c.o"
+},
+{
+  "directory": "/home/lyndon/GruVc/Build",
+  "command": "/usr/bin/cc  -I/home/lyndon/GruVc/Core -I/home/lyndon/GruVc/Extern/Include  -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -c /home/lyndon/GruVc/Core/ApplicationDef.c",
+  "file": "/home/lyndon/GruVc/Core/ApplicationDef.c",
+  "output": "CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o"
+},
+{
+  "directory": "/home/lyndon/GruVc/Build",
+  "command": "/usr/bin/cc  -I/home/lyndon/GruVc/Core -I/home/lyndon/GruVc/Extern/Include  -o CMakeFiles/GruVeTest.dir/Debug/main.c.o -c /home/lyndon/GruVc/Debug/main.c",
+  "file": "/home/lyndon/GruVc/Debug/main.c",
+  "output": "CMakeFiles/GruVeTest.dir/Debug/main.c.o"
+}
+]

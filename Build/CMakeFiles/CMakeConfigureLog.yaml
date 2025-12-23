@@ -4,7 +4,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
@@ -20,29 +20,38 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/bin/"
-      - "/usr/bin/"
+      - "/usr/local/sbin/"
       - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/bin/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/uname"
-    found: "/data/data/com.termux/files/usr/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Android - 36 - aarch64
+      The system is: Linux - 6.18.2-arch2-1 - x86_64
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
@@ -60,22 +69,38 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/gmake"
-      - "/data/data/com.termux/files/usr/bin/gmake"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/make"
-    found: "/data/data/com.termux/files/usr/bin/make"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/var/lib/flatpak/exports/bin/gmake"
+      - "/usr/bin/site_perl/gmake"
+      - "/usr/bin/vendor_perl/gmake"
+      - "/usr/bin/core_perl/gmake"
+      - "/usr/local/sbin/make"
+      - "/usr/local/bin/make"
+    found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
@@ -97,23 +122,34 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/cc"
-    found: "/data/data/com.termux/files/usr/bin/cc"
+      - "/usr/local/sbin/cc"
+      - "/usr/local/bin/cc"
+    found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
@@ -129,22 +165,27 @@ events:
     names:
       - "CMakeCCompilerId.c.in"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/"
-    found: "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /data/data/com.termux/files/usr/bin/cc 
+      Compiler: /usr/bin/cc 
       Build flags: 
       Id flags:  
       
@@ -154,14 +195,14 @@ events:
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
-      The C compiler identification is Clang, found in:
-        /data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/4.2.1/CompilerIdC/a.out
+      The C compiler identification is GNU, found in:
+        /home/lyndon/GruVc/Build/CMakeFiles/4.2.1/CompilerIdC/a.out
       
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_AR"
@@ -175,21 +216,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-ar"
       - "ar"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-ar"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
@@ -203,21 +253,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-ranlib"
       - "ranlib"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-ranlib"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
@@ -231,21 +290,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-strip"
       - "strip"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-strip"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
@@ -259,21 +327,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "ld.lld"
       - "ld"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/ld.lld"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_NM"
@@ -287,21 +364,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-nm"
       - "nm"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-nm"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
@@ -315,21 +401,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-objdump"
       - "objdump"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-objdump"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
@@ -343,21 +438,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-objcopy"
       - "objcopy"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-objcopy"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
@@ -371,21 +475,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-readelf"
       - "readelf"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-readelf"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
@@ -399,21 +512,38 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-dlltool"
       - "dlltool"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-dlltool"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/var/lib/flatpak/exports/bin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+    found: false
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
@@ -427,21 +557,30 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-addr2line"
       - "addr2line"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    found: "/data/data/com.termux/files/usr/bin/llvm-addr2line"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
@@ -457,25 +596,40 @@ events:
     names:
       - "tapi"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
     searched_directories:
-      - "/data/data/com.termux/files/usr/bin/tapi"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/var/lib/flatpak/exports/bin/tapi"
+      - "/usr/bin/site_perl/tapi"
+      - "/usr/bin/vendor_perl/tapi"
+      - "/usr/bin/core_perl/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
-    description: "LLVM archiver"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -485,34 +639,59 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-ar-21.1"
-      - "llvm-ar-21"
-      - "llvm-ar21"
-      - "llvm-ar"
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
     searched_directories:
-      - "/data/data/com.termux/files/usr/bin/llvm-ar-21.1"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/llvm-ar-21.1"
-      - "/data/data/com.termux/files/usr/bin/llvm-ar-21"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/llvm-ar-21"
-      - "/data/data/com.termux/files/usr/bin/llvm-ar21"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/llvm-ar21"
-    found: "/data/data/com.termux/files/usr/bin/llvm-ar"
+      - "/usr/bin/gcc-ar-15.2"
+      - "/usr/local/sbin/gcc-ar-15.2"
+      - "/usr/local/bin/gcc-ar-15.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-15.2"
+      - "/usr/bin/site_perl/gcc-ar-15.2"
+      - "/usr/bin/vendor_perl/gcc-ar-15.2"
+      - "/usr/bin/core_perl/gcc-ar-15.2"
+      - "/usr/bin/gcc-ar-15"
+      - "/usr/local/sbin/gcc-ar-15"
+      - "/usr/local/bin/gcc-ar-15"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-15"
+      - "/usr/bin/site_perl/gcc-ar-15"
+      - "/usr/bin/vendor_perl/gcc-ar-15"
+      - "/usr/bin/core_perl/gcc-ar-15"
+      - "/usr/bin/gcc-ar15"
+      - "/usr/local/sbin/gcc-ar15"
+      - "/usr/local/bin/gcc-ar15"
+      - "/var/lib/flatpak/exports/bin/gcc-ar15"
+      - "/usr/bin/site_perl/gcc-ar15"
+      - "/usr/bin/vendor_perl/gcc-ar15"
+      - "/usr/bin/core_perl/gcc-ar15"
+    found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
-    description: "Generate index for LLVM archive"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -522,73 +701,61 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "llvm-ranlib-21.1"
-      - "llvm-ranlib-21"
-      - "llvm-ranlib21"
-      - "llvm-ranlib"
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
     candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
     searched_directories:
-      - "/data/data/com.termux/files/usr/bin/llvm-ranlib-21.1"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/llvm-ranlib-21.1"
-      - "/data/data/com.termux/files/usr/bin/llvm-ranlib-21"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/llvm-ranlib-21"
-      - "/data/data/com.termux/files/usr/bin/llvm-ranlib21"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/llvm-ranlib21"
-    found: "/data/data/com.termux/files/usr/bin/llvm-ranlib"
+      - "/usr/bin/gcc-ranlib-15.2"
+      - "/usr/local/sbin/gcc-ranlib-15.2"
+      - "/usr/local/bin/gcc-ranlib-15.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-15.2"
+      - "/usr/bin/site_perl/gcc-ranlib-15.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
+      - "/usr/bin/core_perl/gcc-ranlib-15.2"
+      - "/usr/bin/gcc-ranlib-15"
+      - "/usr/local/sbin/gcc-ranlib-15"
+      - "/usr/local/bin/gcc-ranlib-15"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-15"
+      - "/usr/bin/site_perl/gcc-ranlib-15"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15"
+      - "/usr/bin/core_perl/gcc-ranlib-15"
+      - "/usr/bin/gcc-ranlib15"
+      - "/usr/local/sbin/gcc-ranlib15"
+      - "/usr/local/bin/gcc-ranlib15"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib15"
+      - "/usr/bin/site_perl/gcc-ranlib15"
+      - "/usr/bin/vendor_perl/gcc-ranlib15"
+      - "/usr/bin/core_perl/gcc-ranlib15"
+    found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_CLANG_SCAN_DEPS"
-    description: "`clang-scan-deps` dependency scanner"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "clang-scan-deps-21.1"
-      - "clang-scan-deps-21"
-      - "clang-scan-deps21"
-      - "clang-scan-deps"
-    candidate_directories:
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-    searched_directories:
-      - "/data/data/com.termux/files/usr/bin/clang-scan-deps-21.1"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/clang-scan-deps-21.1"
-      - "/data/data/com.termux/files/usr/bin/clang-scan-deps-21"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/clang-scan-deps-21"
-      - "/data/data/com.termux/files/usr/bin/clang-scan-deps21"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/clang-scan-deps21"
-    found: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-    search_context:
-      ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl"
-      binary: "/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl"
+      source: "/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ"
+      binary: "/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -597,155 +764,222 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl'
+        Change Dir: '/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_ed53c/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_ed53c.dir/build.make CMakeFiles/cmTC_ed53c.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl'
-        Building C object CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o
-        /data/data/com.termux/files/usr/bin/cc   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
-        clang version 21.1.8
-        Target: aarch64-unknown-linux-android24
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_db72f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_db72f.dir/build.make CMakeFiles/cmTC_db72f.dir/build
+        make[1]: Entering directory '/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ'
+        Building C object CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         (in-process)
-         "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target aarch64-unknown-linux-android24
-        ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../usr/local/include"
-        ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../include"
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20251112 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_db72f.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_db72f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccBuYhsP.s
+        GNU C23 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20251112, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /data/data/com.termux/files/usr/lib/clang/21/include
-         /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android
-         /data/data/com.termux/files/usr/bin/../../usr/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
         End of search list.
-        Linking C executable cmTC_ed53c
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed53c.dir/link.txt --verbose=1
-        clang version 21.1.8
-        Target: aarch64-unknown-linux-android24
+        Compiler executable checksum: e7e806b0d021308da32115a1780fef1e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_db72f.dir/'
+         as -v --64 -o CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o /tmp/ccBuYhsP.s
+        GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_db72f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db72f.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_ed53c /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/cc -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -o cmTC_ed53c
-        make[1]: Leaving directory '/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl'
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20251112 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db72f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_db72f.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIFqfVO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_db72f /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20251112
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIFqfVO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_db72f /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.45.1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db72f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_db72f.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -o cmTC_db72f
+        make[1]: Leaving directory '/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/data/data/com.termux/files/usr/lib/clang/21/include]
-          add: [/data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android]
-          add: [/data/data/com.termux/files/usr/bin/../../usr/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
         end of search list found
-        collapse include dir [/data/data/com.termux/files/usr/lib/clang/21/include] ==> [/data/data/com.termux/files/usr/lib/clang/21/include]
-        collapse include dir [/data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android] ==> [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-        collapse include dir [/data/data/com.termux/files/usr/bin/../../usr/include] ==> [/data/data/com.termux/files/usr/include]
-        implicit include dirs: [/data/data/com.termux/files/usr/lib/clang/21/include;/data/data/com.termux/files/usr/include/aarch64-linux-android;/data/data/com.termux/files/usr/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl']
+        ignore line: [Change Dir: '/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ']
         ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_ed53c/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_ed53c.dir/build.make CMakeFiles/cmTC_ed53c.dir/build]
-        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl']
-        ignore line: [Building C object CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/cc   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang version 21.1.8]
-        ignore line: [Target: aarch64-unknown-linux-android24]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_db72f/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_db72f.dir/build.make CMakeFiles/cmTC_db72f.dir/build]
+        ignore line: [make[1]: Entering directory '/home/lyndon/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-jm0oiQ']
+        ignore line: [Building C object CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        ignore line: [ (in-process)]
-        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/dev/GruVc/Build/CMakeFiles/CMakeScratch/TryCompile-WhhFVl -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target aarch64-unknown-linux-android24]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../include"]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20251112 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_db72f.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_db72f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccBuYhsP.s]
+        ignore line: [GNU C23 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20251112  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /data/data/com.termux/files/usr/lib/clang/21/include]
-        ignore line: [ /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android]
-        ignore line: [ /data/data/com.termux/files/usr/bin/../../usr/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_ed53c]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed53c.dir/link.txt --verbose=1]
-        ignore line: [clang version 21.1.8]
-        ignore line: [Target: aarch64-unknown-linux-android24]
+        ignore line: [Compiler executable checksum: e7e806b0d021308da32115a1780fef1e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_db72f.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o /tmp/ccBuYhsP.s]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_db72f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db72f.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_ed53c /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
-          arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
-          arg [--sysroot=/data/data/com.termux/files/usr/bin/../..] ==> ignore
-          arg [-EL] ==> ignore
-          arg [--fix-cortex-a53-843419] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-zmax-page-size=16384] ==> ignore
-          arg [--no-rosegment] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [-rpath=/data/data/com.termux/files/usr/bin/../../usr/lib] ==> ignore
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20251112 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db72f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_db72f.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIFqfVO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_db72f /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIFqfVO.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
           arg [-m] ==> ignore
-          arg [aarch64linux] ==> ignore
-          arg [-pie] ==> ignore
+          arg [elf_x86_64] ==> ignore
           arg [-dynamic-linker] ==> ignore
-          arg [/system/bin/linker64] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ed53c] ==> ignore
-          arg [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o] ==> obj [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o]
-          arg [-L/data/data/com.termux/files/usr/bin/../../usr/lib] ==> dir [/data/data/com.termux/files/usr/bin/../../usr/lib]
-          arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_ed53c.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
+          arg [cmTC_db72f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
           arg [-lc] ==> lib [c]
-          arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-          arg [/data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o] ==> obj [/data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
-        linker tool for 'C': /data/data/com.termux/files/usr/bin/ld.lld
-        remove lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse obj [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o] ==> [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o]
-        collapse obj [/data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o] ==> [/data/data/com.termux/files/usr/lib/crtend_android.o]
-        collapse library dir [/data/data/com.termux/files/usr/bin/../../usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        collapse library dir [/system/lib64] ==> [/system/lib64]
-        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
-        implicit objs: [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o;/data/data/com.termux/files/usr/lib/crtend_android.o]
-        implicit dirs: [/data/data/com.termux/files/usr/lib;/system/lib64]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20251112]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIFqfVO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_db72f /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_db72f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "/data/data/com.termux/files/usr/bin/ld.lld" "-v"
-      LLD 21.1.8 (compatible with GNU linkers)
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.1
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:408 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:408 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_INCLUDE_DIR"
@@ -761,15 +995,18 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -781,36 +1018,31 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/GL/gl.h"
-      - "/data/data/com.termux/files/usr/bin/GL/gl.h"
+      - "/usr/local/sbin/GL/gl.h"
+      - "/usr/local/bin/GL/gl.h"
+      - "/usr/bin/GL/gl.h"
+      - "/var/lib/flatpak/exports/bin/GL/gl.h"
+      - "/usr/bin/site_perl/GL/gl.h"
+      - "/usr/bin/vendor_perl/GL/gl.h"
+      - "/usr/bin/core_perl/GL/gl.h"
       - "/usr/local/include/GL/gl.h"
       - "/usr/local/GL/gl.h"
-      - "/usr/include/GL/gl.h"
-      - "/usr/GL/gl.h"
-      - "/include/GL/gl.h"
-      - "/data/data/com.termux/files/usr/include/GL/gl.h"
-      - "/data/data/com.termux/files/usr/GL/gl.h"
-      - "/usr/X11R6/include/GL/gl.h"
-      - "/usr/X11R6/GL/gl.h"
-      - "/usr/pkg/include/GL/gl.h"
-      - "/usr/pkg/GL/gl.h"
-      - "/opt/include/GL/gl.h"
-      - "/opt/GL/gl.h"
-      - "/usr/include/X11/GL/gl.h"
-      - "/usr/share/doc/NVIDIA_GLX-1.0/include/GL/gl.h"
-      - "/usr/openwin/share/include/GL/gl.h"
-      - "/opt/graphics/OpenGL/include/GL/gl.h"
-    found: false
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -820,7 +1052,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:414 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:414 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_GLX_INCLUDE_DIR"
@@ -836,15 +1068,18 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -853,33 +1088,31 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/GL/glx.h"
-      - "/data/data/com.termux/files/usr/bin/GL/glx.h"
+      - "/usr/local/sbin/GL/glx.h"
+      - "/usr/local/bin/GL/glx.h"
+      - "/usr/bin/GL/glx.h"
+      - "/var/lib/flatpak/exports/bin/GL/glx.h"
+      - "/usr/bin/site_perl/GL/glx.h"
+      - "/usr/bin/vendor_perl/GL/glx.h"
+      - "/usr/bin/core_perl/GL/glx.h"
       - "/usr/local/include/GL/glx.h"
       - "/usr/local/GL/glx.h"
-      - "/usr/include/GL/glx.h"
-      - "/usr/GL/glx.h"
-      - "/include/GL/glx.h"
-      - "/data/data/com.termux/files/usr/include/GL/glx.h"
-      - "/data/data/com.termux/files/usr/GL/glx.h"
-      - "/usr/X11R6/include/GL/glx.h"
-      - "/usr/X11R6/GL/glx.h"
-      - "/usr/pkg/include/GL/glx.h"
-      - "/usr/pkg/GL/glx.h"
-      - "/opt/include/GL/glx.h"
-      - "/opt/GL/glx.h"
-      - "/usr/include/X11/GL/glx.h"
-    found: false
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -889,7 +1122,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:415 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:415 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_EGL_INCLUDE_DIR"
@@ -905,15 +1138,18 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -922,33 +1158,31 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/EGL/egl.h"
-      - "/data/data/com.termux/files/usr/bin/EGL/egl.h"
+      - "/usr/local/sbin/EGL/egl.h"
+      - "/usr/local/bin/EGL/egl.h"
+      - "/usr/bin/EGL/egl.h"
+      - "/var/lib/flatpak/exports/bin/EGL/egl.h"
+      - "/usr/bin/site_perl/EGL/egl.h"
+      - "/usr/bin/vendor_perl/EGL/egl.h"
+      - "/usr/bin/core_perl/EGL/egl.h"
       - "/usr/local/include/EGL/egl.h"
       - "/usr/local/EGL/egl.h"
-      - "/usr/include/EGL/egl.h"
-      - "/usr/EGL/egl.h"
-      - "/include/EGL/egl.h"
-      - "/data/data/com.termux/files/usr/include/EGL/egl.h"
-      - "/data/data/com.termux/files/usr/EGL/egl.h"
-      - "/usr/X11R6/include/EGL/egl.h"
-      - "/usr/X11R6/EGL/egl.h"
-      - "/usr/pkg/include/EGL/egl.h"
-      - "/usr/pkg/EGL/egl.h"
-      - "/opt/include/EGL/egl.h"
-      - "/opt/EGL/egl.h"
-      - "/usr/include/X11/EGL/egl.h"
-    found: false
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -958,7 +1192,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:416 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:416 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_GLES2_INCLUDE_DIR"
@@ -974,15 +1208,18 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -991,33 +1228,31 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/GLES2/gl2.h"
-      - "/data/data/com.termux/files/usr/bin/GLES2/gl2.h"
+      - "/usr/local/sbin/GLES2/gl2.h"
+      - "/usr/local/bin/GLES2/gl2.h"
+      - "/usr/bin/GLES2/gl2.h"
+      - "/var/lib/flatpak/exports/bin/GLES2/gl2.h"
+      - "/usr/bin/site_perl/GLES2/gl2.h"
+      - "/usr/bin/vendor_perl/GLES2/gl2.h"
+      - "/usr/bin/core_perl/GLES2/gl2.h"
       - "/usr/local/include/GLES2/gl2.h"
       - "/usr/local/GLES2/gl2.h"
-      - "/usr/include/GLES2/gl2.h"
-      - "/usr/GLES2/gl2.h"
-      - "/include/GLES2/gl2.h"
-      - "/data/data/com.termux/files/usr/include/GLES2/gl2.h"
-      - "/data/data/com.termux/files/usr/GLES2/gl2.h"
-      - "/usr/X11R6/include/GLES2/gl2.h"
-      - "/usr/X11R6/GLES2/gl2.h"
-      - "/usr/pkg/include/GLES2/gl2.h"
-      - "/usr/pkg/GLES2/gl2.h"
-      - "/opt/include/GLES2/gl2.h"
-      - "/opt/GLES2/gl2.h"
-      - "/usr/include/X11/GLES2/gl2.h"
-    found: false
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1027,7 +1262,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:417 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:417 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_GLES3_INCLUDE_DIR"
@@ -1043,15 +1278,18 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -1060,33 +1298,31 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/GLES3/gl3.h"
-      - "/data/data/com.termux/files/usr/bin/GLES3/gl3.h"
+      - "/usr/local/sbin/GLES3/gl3.h"
+      - "/usr/local/bin/GLES3/gl3.h"
+      - "/usr/bin/GLES3/gl3.h"
+      - "/var/lib/flatpak/exports/bin/GLES3/gl3.h"
+      - "/usr/bin/site_perl/GLES3/gl3.h"
+      - "/usr/bin/vendor_perl/GLES3/gl3.h"
+      - "/usr/bin/core_perl/GLES3/gl3.h"
       - "/usr/local/include/GLES3/gl3.h"
       - "/usr/local/GLES3/gl3.h"
-      - "/usr/include/GLES3/gl3.h"
-      - "/usr/GLES3/gl3.h"
-      - "/include/GLES3/gl3.h"
-      - "/data/data/com.termux/files/usr/include/GLES3/gl3.h"
-      - "/data/data/com.termux/files/usr/GLES3/gl3.h"
-      - "/usr/X11R6/include/GLES3/gl3.h"
-      - "/usr/X11R6/GLES3/gl3.h"
-      - "/usr/pkg/include/GLES3/gl3.h"
-      - "/usr/pkg/GLES3/gl3.h"
-      - "/opt/include/GLES3/gl3.h"
-      - "/opt/GLES3/gl3.h"
-      - "/usr/include/X11/GLES3/gl3.h"
-    found: false
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1096,7 +1332,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:418 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:418 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_xmesa_INCLUDE_DIR"
@@ -1112,15 +1348,18 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -1132,15 +1371,18 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/GL/xmesa.h"
-      - "/data/data/com.termux/files/usr/bin/GL/xmesa.h"
+      - "/usr/local/sbin/GL/xmesa.h"
+      - "/usr/local/bin/GL/xmesa.h"
+      - "/usr/bin/GL/xmesa.h"
+      - "/var/lib/flatpak/exports/bin/GL/xmesa.h"
+      - "/usr/bin/site_perl/GL/xmesa.h"
+      - "/usr/bin/vendor_perl/GL/xmesa.h"
+      - "/usr/bin/core_perl/GL/xmesa.h"
       - "/usr/local/include/GL/xmesa.h"
       - "/usr/local/GL/xmesa.h"
       - "/usr/include/GL/xmesa.h"
       - "/usr/GL/xmesa.h"
       - "/include/GL/xmesa.h"
-      - "/data/data/com.termux/files/usr/include/GL/xmesa.h"
-      - "/data/data/com.termux/files/usr/GL/xmesa.h"
       - "/usr/X11R6/include/GL/xmesa.h"
       - "/usr/X11R6/GL/xmesa.h"
       - "/usr/pkg/include/GL/xmesa.h"
@@ -1154,14 +1396,19 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1171,7 +1418,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:424 (find_path)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:424 (find_path)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "OPENGL_GLU_INCLUDE_DIR"
@@ -1187,15 +1434,18 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
       - "/usr/"
       - "/include/"
-      - "/data/data/com.termux/files/usr/include/"
-      - "/data/data/com.termux/files/usr/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -1204,33 +1454,31 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/GL/glu.h"
-      - "/data/data/com.termux/files/usr/bin/GL/glu.h"
+      - "/usr/local/sbin/GL/glu.h"
+      - "/usr/local/bin/GL/glu.h"
+      - "/usr/bin/GL/glu.h"
+      - "/var/lib/flatpak/exports/bin/GL/glu.h"
+      - "/usr/bin/site_perl/GL/glu.h"
+      - "/usr/bin/vendor_perl/GL/glu.h"
+      - "/usr/bin/core_perl/GL/glu.h"
       - "/usr/local/include/GL/glu.h"
       - "/usr/local/GL/glu.h"
-      - "/usr/include/GL/glu.h"
-      - "/usr/GL/glu.h"
-      - "/include/GL/glu.h"
-      - "/data/data/com.termux/files/usr/include/GL/glu.h"
-      - "/data/data/com.termux/files/usr/GL/glu.h"
-      - "/usr/X11R6/include/GL/glu.h"
-      - "/usr/X11R6/GL/glu.h"
-      - "/usr/pkg/include/GL/glu.h"
-      - "/usr/pkg/GL/glu.h"
-      - "/opt/include/GL/glu.h"
-      - "/opt/GL/glu.h"
-      - "/usr/include/X11/GL/glu.h"
-    found: false
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1240,7 +1488,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:438 (find_library)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:438 (find_library)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "OPENGL_opengl_LIBRARY"
@@ -1256,26 +1504,51 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libOpenGL.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1285,7 +1558,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:443 (find_library)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:443 (find_library)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "OPENGL_glx_LIBRARY"
@@ -1301,26 +1574,80 @@ events:
     names:
       - "GLX"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/libglvnd/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+      - "/usr/lib/"
+      - "/usr/libglvnd/"
+      - "/usr/"
+      - "/lib/libglvnd/"
+      - "/lib/"
+      - "/usr/X11R6/lib/libglvnd/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/libglvnd/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/libglvnd/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/libglvnd/"
+      - "/usr/pkg/"
+      - "/opt/lib/libglvnd/"
+      - "/opt/lib/"
+      - "/opt/libglvnd/"
+      - "/opt/"
+      - "/usr/lib/X11/libglvnd/"
+      - "/usr/lib/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/libglvnd/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+    found: "/usr/lib/libGLX.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1330,7 +1657,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:449 (find_library)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:449 (find_library)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "OPENGL_egl_LIBRARY"
@@ -1346,26 +1673,80 @@ events:
     names:
       - "EGL"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/libglvnd/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+      - "/usr/lib/"
+      - "/usr/libglvnd/"
+      - "/usr/"
+      - "/lib/libglvnd/"
+      - "/lib/"
+      - "/usr/X11R6/lib/libglvnd/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/libglvnd/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/libglvnd/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/libglvnd/"
+      - "/usr/pkg/"
+      - "/opt/lib/libglvnd/"
+      - "/opt/lib/"
+      - "/opt/libglvnd/"
+      - "/opt/"
+      - "/usr/lib/X11/libglvnd/"
+      - "/usr/lib/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/libglvnd/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+    found: "/usr/lib/libEGL.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1375,7 +1756,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:455 (find_library)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:455 (find_library)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "OPENGL_gles2_LIBRARY"
@@ -1391,26 +1772,51 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1420,7 +1826,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:460 (find_library)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:460 (find_library)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "OPENGL_gles3_LIBRARY"
@@ -1437,30 +1843,70 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1470,7 +1916,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:466 (find_library)"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:466 (find_library)"
       - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "OPENGL_glu_LIBRARY"
@@ -1487,30 +1933,54 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/opt/graphics/OpenGL/lib/"
+      - "/usr/openwin/lib/"
+      - "/usr/shlib/"
     searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libGLU.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1520,10 +1990,82 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:521 (find_library)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "PKG_CONFIG_EXECUTABLE"
+    description: "pkg-config executable"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pkg-config"
+      - "pkgconf"
+    candidate_directories:
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/usr/local/sbin/pkg-config"
+      - "/usr/local/sbin/pkgconf"
+      - "/usr/local/bin/pkg-config"
+      - "/usr/local/bin/pkgconf"
+    found: "/usr/bin/pkg-config"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1192 (_pkg_check_modules_internal)"
+      - "CMakeLists.txt:7 (pkg_search_module)"
     mode: "library"
-    variable: "OPENGL_gl_LIBRARY"
+    variable: "pkgcfg_lib_GLFW_glfw"
     description: "Path to a library."
     settings:
       SearchFramework: "NEVER"
@@ -1534,33 +2076,25 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "GL"
-      - "MesaGL"
+      - "glfw"
     candidate_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    searched_directories:
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-      - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: false
+      - "/usr/lib/"
+    found: "/usr/lib/libglfw.so"
     search_context:
       ENV{PATH}:
-        - "/data/data/com.termux/files/home/.local/share/nvim/mason/bin"
-        - "/data/data/com.termux/files/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/data/data/com.termux/files/usr"
+        - "/usr"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
