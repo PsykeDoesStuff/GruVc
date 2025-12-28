@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyndon/GruVc
+CMAKE_SOURCE_DIR = /home/lyndon/Development/GruVc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyndon/GruVc/Build
+CMAKE_BINARY_DIR = /home/lyndon/Development/GruVc/Build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GruVe.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/GruVe.dir/codegen:
 .PHONY : CMakeFiles/GruVe.dir/codegen
 
 CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: CMakeFiles/GruVe.dir/flags.make
-CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: /home/lyndon/GruVc/Core/ApplicationDef.c
+CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: /home/lyndon/Development/GruVc/Core/ApplicationDef.c
 CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: CMakeFiles/GruVe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -MF CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o.d -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -c /home/lyndon/GruVc/Core/ApplicationDef.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -MF CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o.d -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -c /home/lyndon/Development/GruVc/Core/ApplicationDef.c
 
 CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/GruVc/Core/ApplicationDef.c > CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/Core/ApplicationDef.c > CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i
 
 CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/GruVc/Core/ApplicationDef.c -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/Core/ApplicationDef.c -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s
 
 # Object files for target GruVe
 GruVe_OBJECTS = \
@@ -96,7 +96,7 @@ GruVe_EXTERNAL_OBJECTS =
 libGruVe.a: CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o
 libGruVe.a: CMakeFiles/GruVe.dir/build.make
 libGruVe.a: CMakeFiles/GruVe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libGruVe.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libGruVe.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GruVe.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GruVe.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/GruVe.dir/clean:
 .PHONY : CMakeFiles/GruVe.dir/clean
 
 CMakeFiles/GruVe.dir/depend:
-	cd /home/lyndon/GruVc/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyndon/GruVc /home/lyndon/GruVc /home/lyndon/GruVc/Build /home/lyndon/GruVc/Build /home/lyndon/GruVc/Build/CMakeFiles/GruVe.dir/DependInfo.cmake "--color=$(COLOR)" GruVe
+	cd /home/lyndon/Development/GruVc/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyndon/Development/GruVc /home/lyndon/Development/GruVc /home/lyndon/Development/GruVc/Build /home/lyndon/Development/GruVc/Build /home/lyndon/Development/GruVc/Build/CMakeFiles/GruVe.dir/DependInfo.cmake "--color=$(COLOR)" GruVe
 .PHONY : CMakeFiles/GruVe.dir/depend
 

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/lyndon/GruVc/Extern/Include
+C_INCLUDES = -I/home/lyndon/Development/GruVc/Extern/Include
 
 C_FLAGS = 
 

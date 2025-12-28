@@ -1,5 +1,6 @@
-CMakeFiles/GruVeTest.dir/Debug/main.c.o: /home/lyndon/GruVc/Debug/main.c \
- /usr/include/stdc-predef.h /home/lyndon/GruVc/Core/Application.h \
+CMakeFiles/GruVeTest.dir/Debug/main.c.o: \
+ /home/lyndon/Development/GruVc/Debug/main.c /usr/include/stdc-predef.h \
+ /home/lyndon/Development/GruVc/Core/Application.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
@@ -13,7 +14,8 @@ CMakeFiles/GruVeTest.dir/Debug/main.c.o: /home/lyndon/GruVc/Debug/main.c \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
  /usr/include/GL/glext.h \
- /home/lyndon/GruVc/Extern/Include/KHR/khrplatform.h /usr/include/stdio.h \
+ /home/lyndon/Development/GruVc/Extern/Include/KHR/khrplatform.h \
+ /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \

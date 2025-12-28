@@ -1,7 +1,8 @@
 CMakeFiles/glad.dir/Extern/Include/glad.c.o: \
- /home/lyndon/GruVc/Extern/Include/glad.c /usr/include/stdc-predef.h \
- /home/lyndon/GruVc/Extern/Include/glad/glad.h \
- /home/lyndon/GruVc/Extern/Include/KHR/khrplatform.h \
+ /home/lyndon/Development/GruVc/Extern/Include/glad.c \
+ /usr/include/stdc-predef.h \
+ /home/lyndon/Development/GruVc/Extern/Include/glad/glad.h \
+ /home/lyndon/Development/GruVc/Extern/Include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

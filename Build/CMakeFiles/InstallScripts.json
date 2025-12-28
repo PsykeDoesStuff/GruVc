@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/lyndon/GruVc/Build/cmake_install.cmake"
+		"/home/lyndon/Development/GruVc/Build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

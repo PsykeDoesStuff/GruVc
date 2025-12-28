@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyndon/GruVc
+CMAKE_SOURCE_DIR = /home/lyndon/Development/GruVc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyndon/GruVc/Build
+CMAKE_BINARY_DIR = /home/lyndon/Development/GruVc/Build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -91,14 +91,14 @@ clean: CMakeFiles/GruVeTest.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=5,6 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=5,6 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/GruVc/Build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/Development/GruVc/Build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/glad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/GruVc/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/Development/GruVc/Build/CMakeFiles 0
 .PHONY : CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -108,7 +108,7 @@ glad: CMakeFiles/glad.dir/rule
 # codegen rule for target.
 CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=5,6 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=5,6 "Finished codegen for target glad"
 .PHONY : CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -123,14 +123,14 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/GruVe.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=1,2 "Built target GruVe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=1,2 "Built target GruVe"
 .PHONY : CMakeFiles/GruVe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GruVe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/GruVc/Build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/Development/GruVc/Build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GruVe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/GruVc/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/Development/GruVc/Build/CMakeFiles 0
 .PHONY : CMakeFiles/GruVe.dir/rule
 
 # Convenience name for target.
@@ -140,7 +140,7 @@ GruVe: CMakeFiles/GruVe.dir/rule
 # codegen rule for target.
 CMakeFiles/GruVe.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=1,2 "Finished codegen for target GruVe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=1,2 "Finished codegen for target GruVe"
 .PHONY : CMakeFiles/GruVe.dir/codegen
 
 # clean rule for target.
@@ -156,14 +156,14 @@ CMakeFiles/GruVeTest.dir/all: CMakeFiles/glad.dir/all
 CMakeFiles/GruVeTest.dir/all: CMakeFiles/GruVe.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=3,4 "Built target GruVeTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=3,4 "Built target GruVeTest"
 .PHONY : CMakeFiles/GruVeTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GruVeTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/GruVc/Build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/Development/GruVc/Build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GruVeTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/GruVc/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyndon/Development/GruVc/Build/CMakeFiles 0
 .PHONY : CMakeFiles/GruVeTest.dir/rule
 
 # Convenience name for target.
@@ -173,7 +173,7 @@ GruVeTest: CMakeFiles/GruVeTest.dir/rule
 # codegen rule for target.
 CMakeFiles/GruVeTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/GruVc/Build/CMakeFiles --progress-num=3,4 "Finished codegen for target GruVeTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=3,4 "Finished codegen for target GruVeTest"
 .PHONY : CMakeFiles/GruVeTest.dir/codegen
 
 # clean rule for target.
@@ -188,7 +188,7 @@ CMakeFiles/GruVeTest.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/lyndon/GruVc/Build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/lyndon/Development/GruVc/Build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,10 @@
+
+#!/bin/bash
+
+set -e
+
+cd Build/
+cmake ..
+make
+cd ..
+./Build/GruVeTest
