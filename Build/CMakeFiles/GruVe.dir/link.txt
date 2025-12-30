@@ -1,2 +1,2 @@
-/usr/bin/ar qc libGruVe.a CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o
+/usr/bin/ar qc libGruVe.a CMakeFiles/GruVe.dir/src/application.c.o
 /usr/bin/ranlib libGruVe.a

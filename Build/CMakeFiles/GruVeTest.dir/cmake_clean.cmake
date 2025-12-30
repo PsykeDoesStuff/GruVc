@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GruVeTest.dir/link.d"
-  "CMakeFiles/GruVeTest.dir/Debug/main.c.o"
-  "CMakeFiles/GruVeTest.dir/Debug/main.c.o.d"
+  "CMakeFiles/GruVeTest.dir/debug/main.c.o"
+  "CMakeFiles/GruVeTest.dir/debug/main.c.o.d"
   "GruVeTest"
   "GruVeTest.pdb"
 )

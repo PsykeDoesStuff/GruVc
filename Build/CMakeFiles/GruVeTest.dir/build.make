@@ -72,28 +72,28 @@ include CMakeFiles/GruVeTest.dir/flags.make
 CMakeFiles/GruVeTest.dir/codegen:
 .PHONY : CMakeFiles/GruVeTest.dir/codegen
 
-CMakeFiles/GruVeTest.dir/Debug/main.c.o: CMakeFiles/GruVeTest.dir/flags.make
-CMakeFiles/GruVeTest.dir/Debug/main.c.o: /home/lyndon/Development/GruVc/Debug/main.c
-CMakeFiles/GruVeTest.dir/Debug/main.c.o: CMakeFiles/GruVeTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GruVeTest.dir/Debug/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVeTest.dir/Debug/main.c.o -MF CMakeFiles/GruVeTest.dir/Debug/main.c.o.d -o CMakeFiles/GruVeTest.dir/Debug/main.c.o -c /home/lyndon/Development/GruVc/Debug/main.c
+CMakeFiles/GruVeTest.dir/debug/main.c.o: CMakeFiles/GruVeTest.dir/flags.make
+CMakeFiles/GruVeTest.dir/debug/main.c.o: /home/lyndon/Development/GruVc/debug/main.c
+CMakeFiles/GruVeTest.dir/debug/main.c.o: CMakeFiles/GruVeTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GruVeTest.dir/debug/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVeTest.dir/debug/main.c.o -MF CMakeFiles/GruVeTest.dir/debug/main.c.o.d -o CMakeFiles/GruVeTest.dir/debug/main.c.o -c /home/lyndon/Development/GruVc/debug/main.c
 
-CMakeFiles/GruVeTest.dir/Debug/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVeTest.dir/Debug/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/Debug/main.c > CMakeFiles/GruVeTest.dir/Debug/main.c.i
+CMakeFiles/GruVeTest.dir/debug/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVeTest.dir/debug/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/debug/main.c > CMakeFiles/GruVeTest.dir/debug/main.c.i
 
-CMakeFiles/GruVeTest.dir/Debug/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVeTest.dir/Debug/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/Debug/main.c -o CMakeFiles/GruVeTest.dir/Debug/main.c.s
+CMakeFiles/GruVeTest.dir/debug/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVeTest.dir/debug/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/debug/main.c -o CMakeFiles/GruVeTest.dir/debug/main.c.s
 
 # Object files for target GruVeTest
 GruVeTest_OBJECTS = \
-"CMakeFiles/GruVeTest.dir/Debug/main.c.o"
+"CMakeFiles/GruVeTest.dir/debug/main.c.o"
 
 # External object files for target GruVeTest
 GruVeTest_EXTERNAL_OBJECTS =
 
-GruVeTest: CMakeFiles/GruVeTest.dir/Debug/main.c.o
+GruVeTest: CMakeFiles/GruVeTest.dir/debug/main.c.o
 GruVeTest: CMakeFiles/GruVeTest.dir/build.make
 GruVeTest: CMakeFiles/GruVeTest.dir/compiler_depend.ts
 GruVeTest: libGruVe.a

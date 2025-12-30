@@ -1,20 +1,20 @@
 [
 {
   "directory": "/home/lyndon/Development/GruVc/Build",
-  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/Extern/Include  -o CMakeFiles/glad.dir/Extern/Include/glad.c.o -c /home/lyndon/Development/GruVc/Extern/Include/glad.c",
-  "file": "/home/lyndon/Development/GruVc/Extern/Include/glad.c",
-  "output": "CMakeFiles/glad.dir/Extern/Include/glad.c.o"
+  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/extern/include  -o CMakeFiles/glad.dir/extern/include/glad.c.o -c /home/lyndon/Development/GruVc/extern/include/glad.c",
+  "file": "/home/lyndon/Development/GruVc/extern/include/glad.c",
+  "output": "CMakeFiles/glad.dir/extern/include/glad.c.o"
 },
 {
   "directory": "/home/lyndon/Development/GruVc/Build",
-  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/Core -I/home/lyndon/Development/GruVc/Extern/Include  -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -c /home/lyndon/Development/GruVc/Core/ApplicationDef.c",
-  "file": "/home/lyndon/Development/GruVc/Core/ApplicationDef.c",
-  "output": "CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o"
+  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/src -I/home/lyndon/Development/GruVc/extern/include  -o CMakeFiles/GruVe.dir/src/application.c.o -c /home/lyndon/Development/GruVc/src/application.c",
+  "file": "/home/lyndon/Development/GruVc/src/application.c",
+  "output": "CMakeFiles/GruVe.dir/src/application.c.o"
 },
 {
   "directory": "/home/lyndon/Development/GruVc/Build",
-  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/Core -I/home/lyndon/Development/GruVc/Extern/Include  -o CMakeFiles/GruVeTest.dir/Debug/main.c.o -c /home/lyndon/Development/GruVc/Debug/main.c",
-  "file": "/home/lyndon/Development/GruVc/Debug/main.c",
-  "output": "CMakeFiles/GruVeTest.dir/Debug/main.c.o"
+  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/src -I/home/lyndon/Development/GruVc/extern/include  -o CMakeFiles/GruVeTest.dir/debug/main.c.o -c /home/lyndon/Development/GruVc/debug/main.c",
+  "file": "/home/lyndon/Development/GruVc/debug/main.c",
+  "output": "CMakeFiles/GruVeTest.dir/debug/main.c.o"
 }
 ]

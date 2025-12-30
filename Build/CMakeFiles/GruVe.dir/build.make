@@ -72,28 +72,28 @@ include CMakeFiles/GruVe.dir/flags.make
 CMakeFiles/GruVe.dir/codegen:
 .PHONY : CMakeFiles/GruVe.dir/codegen
 
-CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: CMakeFiles/GruVe.dir/flags.make
-CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: /home/lyndon/Development/GruVc/Core/ApplicationDef.c
-CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o: CMakeFiles/GruVe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -MF CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o.d -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o -c /home/lyndon/Development/GruVc/Core/ApplicationDef.c
+CMakeFiles/GruVe.dir/src/application.c.o: CMakeFiles/GruVe.dir/flags.make
+CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/application.c
+CMakeFiles/GruVe.dir/src/application.c.o: CMakeFiles/GruVe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GruVe.dir/src/application.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVe.dir/src/application.c.o -MF CMakeFiles/GruVe.dir/src/application.c.o.d -o CMakeFiles/GruVe.dir/src/application.c.o -c /home/lyndon/Development/GruVc/src/application.c
 
-CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/Core/ApplicationDef.c > CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i
+CMakeFiles/GruVe.dir/src/application.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVe.dir/src/application.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/src/application.c > CMakeFiles/GruVe.dir/src/application.c.i
 
-CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/Core/ApplicationDef.c -o CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s
+CMakeFiles/GruVe.dir/src/application.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVe.dir/src/application.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/src/application.c -o CMakeFiles/GruVe.dir/src/application.c.s
 
 # Object files for target GruVe
 GruVe_OBJECTS = \
-"CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o"
+"CMakeFiles/GruVe.dir/src/application.c.o"
 
 # External object files for target GruVe
 GruVe_EXTERNAL_OBJECTS =
 
-libGruVe.a: CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o
+libGruVe.a: CMakeFiles/GruVe.dir/src/application.c.o
 libGruVe.a: CMakeFiles/GruVe.dir/build.make
 libGruVe.a: CMakeFiles/GruVe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libGruVe.a"

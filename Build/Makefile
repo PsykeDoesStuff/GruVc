@@ -156,77 +156,77 @@ GruVeTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/build
 .PHONY : GruVeTest/fast
 
-Core/ApplicationDef.o: Core/ApplicationDef.c.o
-.PHONY : Core/ApplicationDef.o
+debug/main.o: debug/main.c.o
+.PHONY : debug/main.o
 
 # target to build an object file
-Core/ApplicationDef.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/Core/ApplicationDef.c.o
-.PHONY : Core/ApplicationDef.c.o
+debug/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/debug/main.c.o
+.PHONY : debug/main.c.o
 
-Core/ApplicationDef.i: Core/ApplicationDef.c.i
-.PHONY : Core/ApplicationDef.i
+debug/main.i: debug/main.c.i
+.PHONY : debug/main.i
 
 # target to preprocess a source file
-Core/ApplicationDef.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/Core/ApplicationDef.c.i
-.PHONY : Core/ApplicationDef.c.i
+debug/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/debug/main.c.i
+.PHONY : debug/main.c.i
 
-Core/ApplicationDef.s: Core/ApplicationDef.c.s
-.PHONY : Core/ApplicationDef.s
+debug/main.s: debug/main.c.s
+.PHONY : debug/main.s
 
 # target to generate assembly for a file
-Core/ApplicationDef.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/Core/ApplicationDef.c.s
-.PHONY : Core/ApplicationDef.c.s
+debug/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/debug/main.c.s
+.PHONY : debug/main.c.s
 
-Debug/main.o: Debug/main.c.o
-.PHONY : Debug/main.o
+extern/include/glad.o: extern/include/glad.c.o
+.PHONY : extern/include/glad.o
 
 # target to build an object file
-Debug/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/Debug/main.c.o
-.PHONY : Debug/main.c.o
+extern/include/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/extern/include/glad.c.o
+.PHONY : extern/include/glad.c.o
 
-Debug/main.i: Debug/main.c.i
-.PHONY : Debug/main.i
+extern/include/glad.i: extern/include/glad.c.i
+.PHONY : extern/include/glad.i
 
 # target to preprocess a source file
-Debug/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/Debug/main.c.i
-.PHONY : Debug/main.c.i
+extern/include/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/extern/include/glad.c.i
+.PHONY : extern/include/glad.c.i
 
-Debug/main.s: Debug/main.c.s
-.PHONY : Debug/main.s
+extern/include/glad.s: extern/include/glad.c.s
+.PHONY : extern/include/glad.s
 
 # target to generate assembly for a file
-Debug/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVeTest.dir/build.make CMakeFiles/GruVeTest.dir/Debug/main.c.s
-.PHONY : Debug/main.c.s
+extern/include/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/extern/include/glad.c.s
+.PHONY : extern/include/glad.c.s
 
-Extern/Include/glad.o: Extern/Include/glad.c.o
-.PHONY : Extern/Include/glad.o
+src/application.o: src/application.c.o
+.PHONY : src/application.o
 
 # target to build an object file
-Extern/Include/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/Extern/Include/glad.c.o
-.PHONY : Extern/Include/glad.c.o
+src/application.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/application.c.o
+.PHONY : src/application.c.o
 
-Extern/Include/glad.i: Extern/Include/glad.c.i
-.PHONY : Extern/Include/glad.i
+src/application.i: src/application.c.i
+.PHONY : src/application.i
 
 # target to preprocess a source file
-Extern/Include/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/Extern/Include/glad.c.i
-.PHONY : Extern/Include/glad.c.i
+src/application.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/application.c.i
+.PHONY : src/application.c.i
 
-Extern/Include/glad.s: Extern/Include/glad.c.s
-.PHONY : Extern/Include/glad.s
+src/application.s: src/application.c.s
+.PHONY : src/application.s
 
 # target to generate assembly for a file
-Extern/Include/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/Extern/Include/glad.c.s
-.PHONY : Extern/Include/glad.c.s
+src/application.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/application.c.s
+.PHONY : src/application.c.s
 
 # Help Target
 help:
@@ -239,15 +239,15 @@ help:
 	@echo "... GruVe"
 	@echo "... GruVeTest"
 	@echo "... glad"
-	@echo "... Core/ApplicationDef.o"
-	@echo "... Core/ApplicationDef.i"
-	@echo "... Core/ApplicationDef.s"
-	@echo "... Debug/main.o"
-	@echo "... Debug/main.i"
-	@echo "... Debug/main.s"
-	@echo "... Extern/Include/glad.o"
-	@echo "... Extern/Include/glad.i"
-	@echo "... Extern/Include/glad.s"
+	@echo "... debug/main.o"
+	@echo "... debug/main.i"
+	@echo "... debug/main.s"
+	@echo "... extern/include/glad.o"
+	@echo "... extern/include/glad.i"
+	@echo "... extern/include/glad.s"
+	@echo "... src/application.o"
+	@echo "... src/application.i"
+	@echo "... src/application.s"
 .PHONY : help
 
 

@@ -1,7 +1,7 @@
 #define GLFW_INCLUDE_NONE
 #include <glad/glad.h>
 // order
-#include "Application.h"
+#include "application.h"
 #include <GLFW/glfw3.h>
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb/stb_image.h"
@@ -57,7 +57,7 @@ int CreateWindow(int wsize, int hsize, const char *wtitle, Application *wapp) {
     return -1;
   }
 
-  SetWindowIcon(wapp, "Resources/icon.png");
+  SetWindowIcon(wapp, "resources/icon.png");
 
   glfwMakeContextCurrent(wapp->ApplicationWindow);
   glfwSetFramebufferSizeCallback(wapp->ApplicationWindow,

@@ -72,28 +72,28 @@ include CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/codegen:
 .PHONY : CMakeFiles/glad.dir/codegen
 
-CMakeFiles/glad.dir/Extern/Include/glad.c.o: CMakeFiles/glad.dir/flags.make
-CMakeFiles/glad.dir/Extern/Include/glad.c.o: /home/lyndon/Development/GruVc/Extern/Include/glad.c
-CMakeFiles/glad.dir/Extern/Include/glad.c.o: CMakeFiles/glad.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/Extern/Include/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/Extern/Include/glad.c.o -MF CMakeFiles/glad.dir/Extern/Include/glad.c.o.d -o CMakeFiles/glad.dir/Extern/Include/glad.c.o -c /home/lyndon/Development/GruVc/Extern/Include/glad.c
+CMakeFiles/glad.dir/extern/include/glad.c.o: CMakeFiles/glad.dir/flags.make
+CMakeFiles/glad.dir/extern/include/glad.c.o: /home/lyndon/Development/GruVc/extern/include/glad.c
+CMakeFiles/glad.dir/extern/include/glad.c.o: CMakeFiles/glad.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/extern/include/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/extern/include/glad.c.o -MF CMakeFiles/glad.dir/extern/include/glad.c.o.d -o CMakeFiles/glad.dir/extern/include/glad.c.o -c /home/lyndon/Development/GruVc/extern/include/glad.c
 
-CMakeFiles/glad.dir/Extern/Include/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/Extern/Include/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/Extern/Include/glad.c > CMakeFiles/glad.dir/Extern/Include/glad.c.i
+CMakeFiles/glad.dir/extern/include/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/extern/include/glad.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/extern/include/glad.c > CMakeFiles/glad.dir/extern/include/glad.c.i
 
-CMakeFiles/glad.dir/Extern/Include/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/Extern/Include/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/Extern/Include/glad.c -o CMakeFiles/glad.dir/Extern/Include/glad.c.s
+CMakeFiles/glad.dir/extern/include/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/extern/include/glad.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/extern/include/glad.c -o CMakeFiles/glad.dir/extern/include/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
-"CMakeFiles/glad.dir/Extern/Include/glad.c.o"
+"CMakeFiles/glad.dir/extern/include/glad.c.o"
 
 # External object files for target glad
 glad_EXTERNAL_OBJECTS =
 
-libglad.a: CMakeFiles/glad.dir/Extern/Include/glad.c.o
+libglad.a: CMakeFiles/glad.dir/extern/include/glad.c.o
 libglad.a: CMakeFiles/glad.dir/build.make
 libglad.a: CMakeFiles/glad.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libglad.a"
