@@ -86,17 +86,49 @@ CMakeFiles/GruVe.dir/src/application.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVe.dir/src/application.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/src/application.c -o CMakeFiles/GruVe.dir/src/application.c.s
 
+CMakeFiles/GruVe.dir/src/events.c.o: CMakeFiles/GruVe.dir/flags.make
+CMakeFiles/GruVe.dir/src/events.c.o: /home/lyndon/Development/GruVc/src/events.c
+CMakeFiles/GruVe.dir/src/events.c.o: CMakeFiles/GruVe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/GruVe.dir/src/events.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVe.dir/src/events.c.o -MF CMakeFiles/GruVe.dir/src/events.c.o.d -o CMakeFiles/GruVe.dir/src/events.c.o -c /home/lyndon/Development/GruVc/src/events.c
+
+CMakeFiles/GruVe.dir/src/events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVe.dir/src/events.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/src/events.c > CMakeFiles/GruVe.dir/src/events.c.i
+
+CMakeFiles/GruVe.dir/src/events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVe.dir/src/events.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/src/events.c -o CMakeFiles/GruVe.dir/src/events.c.s
+
+CMakeFiles/GruVe.dir/src/layers.c.o: CMakeFiles/GruVe.dir/flags.make
+CMakeFiles/GruVe.dir/src/layers.c.o: /home/lyndon/Development/GruVc/src/layers.c
+CMakeFiles/GruVe.dir/src/layers.c.o: CMakeFiles/GruVe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GruVe.dir/src/layers.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GruVe.dir/src/layers.c.o -MF CMakeFiles/GruVe.dir/src/layers.c.o.d -o CMakeFiles/GruVe.dir/src/layers.c.o -c /home/lyndon/Development/GruVc/src/layers.c
+
+CMakeFiles/GruVe.dir/src/layers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GruVe.dir/src/layers.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyndon/Development/GruVc/src/layers.c > CMakeFiles/GruVe.dir/src/layers.c.i
+
+CMakeFiles/GruVe.dir/src/layers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GruVe.dir/src/layers.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyndon/Development/GruVc/src/layers.c -o CMakeFiles/GruVe.dir/src/layers.c.s
+
 # Object files for target GruVe
 GruVe_OBJECTS = \
-"CMakeFiles/GruVe.dir/src/application.c.o"
+"CMakeFiles/GruVe.dir/src/application.c.o" \
+"CMakeFiles/GruVe.dir/src/events.c.o" \
+"CMakeFiles/GruVe.dir/src/layers.c.o"
 
 # External object files for target GruVe
 GruVe_EXTERNAL_OBJECTS =
 
 libGruVe.a: CMakeFiles/GruVe.dir/src/application.c.o
+libGruVe.a: CMakeFiles/GruVe.dir/src/events.c.o
+libGruVe.a: CMakeFiles/GruVe.dir/src/layers.c.o
 libGruVe.a: CMakeFiles/GruVe.dir/build.make
 libGruVe.a: CMakeFiles/GruVe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libGruVe.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyndon/Development/GruVc/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libGruVe.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GruVe.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GruVe.dir/link.txt --verbose=$(VERBOSE)
 

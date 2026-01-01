@@ -6,6 +6,9 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
   /home/lyndon/Development/GruVc/extern/include/glad/glad.h \
   /home/lyndon/Development/GruVc/extern/include/stb/stb_image.h \
   /home/lyndon/Development/GruVc/src/application.h \
+  /home/lyndon/Development/GruVc/src/events.h \
+  /home/lyndon/Development/GruVc/src/layers.h \
+  /home/lyndon/Development/GruVc/src/util/types.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/assert.h \
@@ -96,6 +99,46 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h
 
+CMakeFiles/GruVe.dir/src/events.c.o: /home/lyndon/Development/GruVc/src/events.c \
+  /usr/include/stdc-predef.h
+
+CMakeFiles/GruVe.dir/src/layers.c.o: /home/lyndon/Development/GruVc/src/layers.c \
+  /home/lyndon/Development/GruVc/src/events.h \
+  /home/lyndon/Development/GruVc/src/layers.h \
+  /home/lyndon/Development/GruVc/src/util/types.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h:
 
@@ -143,13 +186,9 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 
 /usr/include/bits/typesizes.h:
 
-/usr/include/bits/posix2_lim.h:
+/usr/include/bits/types/struct_timespec.h:
 
-/usr/include/bits/mathcalls-macros.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/bits/types/clock_t.h:
+/usr/include/bits/types/struct_FILE.h:
 
 /usr/include/stdio.h:
 
@@ -161,6 +200,16 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 
 /usr/include/bits/fp-logb.h:
 
+/home/lyndon/Development/GruVc/src/layers.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/types/clock_t.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h:
 
 /usr/include/bits/libc-header-start.h:
@@ -171,17 +220,17 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 
 /usr/include/bits/iscanonical.h:
 
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/bits/fp-fast.h:
-
 /usr/include/bits/flt-eval-method.h:
 
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/bits/floatn.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
 
 /home/lyndon/Development/GruVc/src/application.h:
 
@@ -195,17 +244,21 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 
 /home/lyndon/Development/GruVc/extern/include/KHR/khrplatform.h:
 
+/usr/include/bits/types/sigset_t.h:
+
+/home/lyndon/Development/GruVc/extern/include/stb/stb_image.h:
+
+/home/lyndon/Development/GruVc/src/util/types.h:
+
 /usr/include/alloca.h:
 
 /usr/include/bits/stdint-least.h:
 
-/usr/include/assert.h:
+/home/lyndon/Development/GruVc/src/events.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/bits/endianness.h:
+/usr/include/assert.h:
 
 /usr/include/bits/byteswap.h:
 
@@ -215,7 +268,11 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 
 /usr/include/bits/mathcalls.h:
 
-/usr/include/bits/floatn-common.h:
+/usr/include/bits/fp-fast.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/home/lyndon/Development/GruVc/src/events.c:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
@@ -224,6 +281,8 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 /usr/include/bits/endian.h:
 
 /usr/include/bits/timesize.h:
+
+/home/lyndon/Development/GruVc/src/layers.c:
 
 /usr/include/stdc-predef.h:
 
@@ -240,10 +299,6 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 /usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/stdio_lim.h:
-
-/home/lyndon/Development/GruVc/extern/include/stb/stb_image.h:
-
-/usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/types/time_t.h:
 
@@ -282,5 +337,3 @@ CMakeFiles/GruVe.dir/src/application.c.o: /home/lyndon/Development/GruVc/src/app
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/struct_timespec.h:

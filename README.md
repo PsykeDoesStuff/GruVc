@@ -10,3 +10,6 @@ for the forseable future, but incase you *are* reading this, here are a few poin
 
 ###### for information regarding the style-guide, see [styleguide.md](/info/styleguide.md). 
 ###### but TLDR, we use a slighty modified linux kernal standard.
+
+
+###### [mvp goal](/info/mvp.md).

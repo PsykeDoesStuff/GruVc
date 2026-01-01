@@ -1,8 +1,8 @@
 CMakeFiles/GruVe.dir/src/application.c.o: \
  /home/lyndon/Development/GruVc/src/application.c \
- /usr/include/stdc-predef.h \
- /home/lyndon/Development/GruVc/extern/include/glad/glad.h \
- /home/lyndon/Development/GruVc/extern/include/KHR/khrplatform.h \
+ /usr/include/stdc-predef.h /home/lyndon/Development/GruVc/src/layers.h \
+ /home/lyndon/Development/GruVc/src/events.h \
+ /home/lyndon/Development/GruVc/src/util/types.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,6 +13,8 @@ CMakeFiles/GruVe.dir/src/application.c.o: \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
+ /home/lyndon/Development/GruVc/extern/include/glad/glad.h \
+ /home/lyndon/Development/GruVc/extern/include/KHR/khrplatform.h \
  /home/lyndon/Development/GruVc/src/application.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \

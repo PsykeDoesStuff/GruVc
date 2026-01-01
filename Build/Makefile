@@ -228,6 +228,54 @@ src/application.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/application.c.s
 .PHONY : src/application.c.s
 
+src/events.o: src/events.c.o
+.PHONY : src/events.o
+
+# target to build an object file
+src/events.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/events.c.o
+.PHONY : src/events.c.o
+
+src/events.i: src/events.c.i
+.PHONY : src/events.i
+
+# target to preprocess a source file
+src/events.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/events.c.i
+.PHONY : src/events.c.i
+
+src/events.s: src/events.c.s
+.PHONY : src/events.s
+
+# target to generate assembly for a file
+src/events.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/events.c.s
+.PHONY : src/events.c.s
+
+src/layers.o: src/layers.c.o
+.PHONY : src/layers.o
+
+# target to build an object file
+src/layers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/layers.c.o
+.PHONY : src/layers.c.o
+
+src/layers.i: src/layers.c.i
+.PHONY : src/layers.i
+
+# target to preprocess a source file
+src/layers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/layers.c.i
+.PHONY : src/layers.c.i
+
+src/layers.s: src/layers.c.s
+.PHONY : src/layers.s
+
+# target to generate assembly for a file
+src/layers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GruVe.dir/build.make CMakeFiles/GruVe.dir/src/layers.c.s
+.PHONY : src/layers.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -248,6 +296,12 @@ help:
 	@echo "... src/application.o"
 	@echo "... src/application.i"
 	@echo "... src/application.s"
+	@echo "... src/events.o"
+	@echo "... src/events.i"
+	@echo "... src/events.s"
+	@echo "... src/layers.o"
+	@echo "... src/layers.i"
+	@echo "... src/layers.s"
 .PHONY : help
 
 

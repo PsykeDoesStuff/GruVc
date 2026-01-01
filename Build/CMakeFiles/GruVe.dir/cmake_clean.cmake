@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GruVe.dir/src/application.c.o"
   "CMakeFiles/GruVe.dir/src/application.c.o.d"
+  "CMakeFiles/GruVe.dir/src/events.c.o"
+  "CMakeFiles/GruVe.dir/src/events.c.o.d"
+  "CMakeFiles/GruVe.dir/src/layers.c.o"
+  "CMakeFiles/GruVe.dir/src/layers.c.o.d"
   "libGruVe.a"
   "libGruVe.pdb"
 )

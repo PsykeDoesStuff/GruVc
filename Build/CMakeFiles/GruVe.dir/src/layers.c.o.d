@@ -1,6 +1,5 @@
-CMakeFiles/GruVeTest.dir/debug/main.c.o: \
- /home/lyndon/Development/GruVc/debug/main.c /usr/include/stdc-predef.h \
- /home/lyndon/Development/GruVc/src/application.h \
+CMakeFiles/GruVe.dir/src/layers.c.o: \
+ /home/lyndon/Development/GruVc/src/layers.c /usr/include/stdc-predef.h \
  /home/lyndon/Development/GruVc/src/layers.h \
  /home/lyndon/Development/GruVc/src/events.h \
  /home/lyndon/Development/GruVc/src/util/types.h \
@@ -13,11 +12,8 @@ CMakeFiles/GruVeTest.dir/debug/main.c.o: \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
+ /usr/include/bits/stdint-least.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /usr/include/GL/gl.h /usr/include/GL/glext.h \
- /home/lyndon/Development/GruVc/extern/include/KHR/khrplatform.h \
- /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \

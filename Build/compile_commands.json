@@ -13,6 +13,18 @@
 },
 {
   "directory": "/home/lyndon/Development/GruVc/Build",
+  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/src -I/home/lyndon/Development/GruVc/extern/include  -o CMakeFiles/GruVe.dir/src/events.c.o -c /home/lyndon/Development/GruVc/src/events.c",
+  "file": "/home/lyndon/Development/GruVc/src/events.c",
+  "output": "CMakeFiles/GruVe.dir/src/events.c.o"
+},
+{
+  "directory": "/home/lyndon/Development/GruVc/Build",
+  "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/src -I/home/lyndon/Development/GruVc/extern/include  -o CMakeFiles/GruVe.dir/src/layers.c.o -c /home/lyndon/Development/GruVc/src/layers.c",
+  "file": "/home/lyndon/Development/GruVc/src/layers.c",
+  "output": "CMakeFiles/GruVe.dir/src/layers.c.o"
+},
+{
+  "directory": "/home/lyndon/Development/GruVc/Build",
   "command": "/usr/bin/cc  -I/home/lyndon/Development/GruVc/src -I/home/lyndon/Development/GruVc/extern/include  -o CMakeFiles/GruVeTest.dir/debug/main.c.o -c /home/lyndon/Development/GruVc/debug/main.c",
   "file": "/home/lyndon/Development/GruVc/debug/main.c",
   "output": "CMakeFiles/GruVeTest.dir/debug/main.c.o"

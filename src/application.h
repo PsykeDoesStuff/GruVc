@@ -1,14 +1,14 @@
 #pragma once
 
+#include "layers.h"
 #include <GLFW/glfw3.h>
 #include <stdio.h>
-
 typedef struct {
 
-  GLFWwindow *ApplicationWindow;
-  int WindowWidth;
-  int WindowHeight;
-
+  GLFWwindow *application_window;
+  struct layer_stack *layer_stack;
+  int window_width;
+  int window_height;
 } Application;
 
 int InitApp();

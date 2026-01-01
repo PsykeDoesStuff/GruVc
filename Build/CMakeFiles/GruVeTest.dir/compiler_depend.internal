@@ -5,6 +5,9 @@ CMakeFiles/GruVeTest.dir/debug/main.c.o
  /home/lyndon/Development/GruVc/debug/main.c
  /home/lyndon/Development/GruVc/extern/include/KHR/khrplatform.h
  /home/lyndon/Development/GruVc/src/application.h
+ /home/lyndon/Development/GruVc/src/events.h
+ /home/lyndon/Development/GruVc/src/layers.h
+ /home/lyndon/Development/GruVc/src/util/types.h
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
  /usr/include/GLFW/glfw3.h

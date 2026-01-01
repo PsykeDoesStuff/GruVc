@@ -1,3 +1,4 @@
+#include "layers.h"
 #define GLFW_INCLUDE_NONE
 #include <glad/glad.h>
 // order
@@ -36,7 +37,7 @@ int SetWindowIcon(Application *app, const char *iconPath) {
       stbi_load(iconPath, &icon[0].width, &icon[0].height, &channels, 4);
 
   if (icon[0].pixels) {
-    glfwSetWindowIcon(app->ApplicationWindow, 1, icon);
+    glfwSetWindowIcon(app->application_window, 1, icon);
     stbi_image_free(icon[0].pixels);
     printf("loaded image at %s\n", iconPath);
     return 0;
@@ -47,11 +48,11 @@ int SetWindowIcon(Application *app, const char *iconPath) {
 }
 
 int CreateWindow(int wsize, int hsize, const char *wtitle, Application *wapp) {
-  wapp->WindowHeight = hsize;
-  wapp->WindowHeight = wsize;
-  wapp->ApplicationWindow = glfwCreateWindow(wsize, hsize, wtitle, NULL, NULL);
+  wapp->window_height = hsize;
+  wapp->window_width = wsize;
+  wapp->application_window = glfwCreateWindow(wsize, hsize, wtitle, NULL, NULL);
 
-  if (wapp->ApplicationWindow == NULL) {
+  if (wapp->application_window == NULL) {
     printf("Failed to create Window\n");
     glfwTerminate();
     return -1;
@@ -59,18 +60,21 @@ int CreateWindow(int wsize, int hsize, const char *wtitle, Application *wapp) {
 
   SetWindowIcon(wapp, "resources/icon.png");
 
-  glfwMakeContextCurrent(wapp->ApplicationWindow);
-  glfwSetFramebufferSizeCallback(wapp->ApplicationWindow,
+  glfwMakeContextCurrent(wapp->application_window);
+  glfwSetFramebufferSizeCallback(wapp->application_window,
                                  FrameBufferSizeCallback);
 
   return 0;
 }
 int ApplicationLoop(Application *wapp) {
+  layer_stack_init(wapp->layer_stack);
 
-  while (!glfwWindowShouldClose(wapp->ApplicationWindow)) {
-    glfwSwapBuffers(wapp->ApplicationWindow);
+  while (!glfwWindowShouldClose(wapp->application_window)) {
+    layer_stack_update(wapp->layer_stack);
+    glfwSwapBuffers(wapp->application_window);
     glfwPollEvents();
   }
+  layer_stack_shutdown(wapp->layer_stack);
   glfwTerminate();
   return 0;
 }
