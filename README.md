@@ -3,8 +3,7 @@
 im not planning to make this open source, or at least pubically avliable, 
 but welcome to GruV! my Voxel raycasting framework designed for my voxel based games!
 
-while full documentation isnt really soemthing i pan just yet since, well its only me thats going to be using this 
-for the forseable future, but incase you *are* reading this, here are a few pointers on contributing!
+while full documentation isnt really something i plan to do just yet, since well, its only me thats going to be using this for the forseable future, but incase you *are* reading this, here are a few pointers on contributing!
 
 
 
